@@ -1,0 +1,71 @@
+.my-carousel{
+    padding: 0px;
+}
+
+.my-carousel::after{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 3px;
+}
+
+.my-carousel .carousel-item{
+    display: flex;
+    max-height: 650px;
+
+}
+
+
+.product-img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.product-card{
+    margin-top: 15px;
+}
+
+.product-price{
+    margin-bottom: 10px;
+}
+
+.small-price{
+    text-decoration: line-through;
+}
+
+.my-carousel .carousel-item {
+    object-fit: cover;
+}
+
+.my-container{
+
+}
+
+.search{
+    margin-left: 10px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.my-header{
+    max-height: 1000px;
+}
+
+html {
+    font-size: 19px;
+}
+
+.dropdown {
+    height: 50px;
+    width: 100px;
+}
+
+
+
+
+.main-content:before{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 3px;
+}
