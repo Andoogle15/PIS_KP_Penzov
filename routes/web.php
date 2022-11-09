@@ -21,6 +21,9 @@ Route::get('/main', [App\Http\Controllers\MainPageController::class, 'index'])->
 Route::get('/stocks', [App\Http\Controllers\StockController::class, 'index'])->name('stock.index');
 Route::get('/contacts', [App\Http\Controllers\ContactController::class, 'index'])->name('contact.index');
 Route::get('/info', [App\Http\Controllers\InfoController::class, 'index'])->name('info.index');
+Route::get('/restaurant', [App\Http\Controllers\RestaurantController::class, 'index'])->name('restaurant.index');
+Route::get('/sales', [App\Http\Controllers\SaleController::class, 'index'])->name('sale.index');
+
 
 Auth::routes();
 
