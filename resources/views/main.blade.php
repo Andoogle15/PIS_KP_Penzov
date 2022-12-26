@@ -78,145 +78,120 @@
         <div class="section-name">
             <h2>Популярные блюда</h2>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="column col-lg-4 col-sm-6 mb-3">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h4>Пицца "4 Сезона</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
-
-                            <div class="product-bottom-details d-flex justify-content-between">
-                                <div class="product-price">
-                                    730руб
-                                </div>
-                                <div class="product-links">
-                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="#"> <i class="fa-solid fa-heart"></i></a>
-                                </div>
+        <div class="container-cards">
+            <div class="product-cards">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
+                    </div>
+                    <div class="product-details">
+                        <h4>Пицца "4 Сезона</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                730руб
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"> <i class="fa-solid fa-heart"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="column col-lg-4 col-sm-6 mb-3">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h4>Пицца "4 Сезона"</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
-
-                            <div class="product-bottom-details d-flex justify-content-between">
-                                <div class="product-price">
-                                    730руб
-                                </div>
-                                <div class="product-links">
-                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="#"> <i class="fa-solid fa-heart"></i></a>
-                                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
+                    </div>
+                    <div class="product-details">
+                        <h4>Пицца "4 Сезона</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                730руб
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"> <i class="fa-solid fa-heart"></i></a>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-                <div class="column col-lg-4 col-sm-6 mb-3">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h4>Пицца "4 Сезона"</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
-
-                            <div class="product-bottom-details d-flex justify-content-between">
-                                <div class="product-price">
-                                    730руб
-                                </div>
-                                <div class="product-links">
-                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="#"> <i class="fa-solid fa-heart"></i></a>
-                                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
+                    </div>
+                    <div class="product-details">
+                        <h4>Пицца "4 Сезона</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                730руб
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"> <i class="fa-solid fa-heart"></i></a>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-                <div class="column col-lg-4 col-sm-6 mb-3">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h4>Пицца "4 Сезона"</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
-
-                            <div class="product-bottom-details d-flex justify-content-between">
-                                <div class="product-price">
-                                    730руб
-                                </div>
-                                <div class="product-links">
-                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="#"> <i class="fa-solid fa-heart"></i></a>
-                                </div>
+                <div class="brake"></div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
+                    </div>
+                    <div class="product-details">
+                        <h4>Пицца "4 Сезона</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                730руб
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"> <i class="fa-solid fa-heart"></i></a>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-                <div class="column col-lg-4 col-sm-6 mb-3">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h4>Пицца "4 Сезона"</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
-
-                            <div class="product-bottom-details d-flex justify-content-between">
-                                <div class="product-price">
-                                    730руб
-                                </div>
-                                <div class="product-links">
-                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="#"> <i class="fa-solid fa-heart"></i></a>
-                                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
+                    </div>
+                    <div class="product-details">
+                        <h4>Пицца "4 Сезона</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                730руб
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"> <i class="fa-solid fa-heart"></i></a>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-                <div class="column col-lg-4 col-sm-6 mb-3">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h4>Пицца "4 Сезона"</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
-
-                            <div class="product-bottom-details d-flex justify-content-between">
-                                <div class="product-price">
-                                    730руб
-                                </div>
-                                <div class="product-links">
-                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="#"> <i class="fa-solid fa-heart"></i></a>
-                                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
+                    </div>
+                    <div class="product-details">
+                        <h4>Пицца "4 Сезона</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                730руб
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"> <i class="fa-solid fa-heart"></i></a>
                             </div>
                         </div>
-
                     </div>
                 </div>
+                <div class="brake"></div>
             </div>
+
         </div>
     </section>
 

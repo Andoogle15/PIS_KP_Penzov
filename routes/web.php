@@ -23,6 +23,12 @@ Route::get('/contacts', [App\Http\Controllers\ContactController::class, 'index']
 Route::get('/info', [App\Http\Controllers\InfoController::class, 'index'])->name('info.index');
 Route::get('/restaurant', [App\Http\Controllers\RestaurantController::class, 'index'])->name('restaurant.index');
 Route::get('/sales', [App\Http\Controllers\SaleController::class, 'index'])->name('sale.index');
+Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile.index');
+Route::get('/orders', [App\Http\Controllers\OrderController::class, 'index'])->name('order.index');
+Route::get('/restaurant/estab', [App\Http\Controllers\EstablishmentController::class, 'index'])->name('establishment.index');
+Route::get('/favorites', [App\Http\Controllers\FavoriteController::class, 'index'])->name('favorite.index');
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about.index');
+Route::get('/menu_unlog', [App\Http\Controllers\WelcomeUnlogController::class, 'index'])->name('welcomeUnlog.index');
 
 
 Auth::routes();

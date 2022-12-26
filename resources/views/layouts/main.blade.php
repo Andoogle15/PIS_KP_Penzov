@@ -40,18 +40,14 @@
                             <a href="{{ route('info.index') }}" class="nav-link">Доставка и оплата</a>
                         </li>
                     </ul>
-
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown">
-                                <i class="fa-solid fa-user"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Мой профиль</a></li>
-                                <li><a class="dropdown-item" href="#">Настройки</a></li>
-                                <li><a class="dropdown-item" href="#">Выйти</a></li>
-                            </ul>
-                        </li>
+                    <form class="d-flex search">
+                        <input class="form-control mr-2" type="search" placeholder="Поиск" aria-label="Search">
+                        <button class="btn-search btn-outline" type="submit">Поиск</button>
+                    </form>
+                    <a class="favorites" href="{{ route('favorite.index') }}">
+                        <i class="fa-solid fa-heart"></i>
+                    </a>
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <button type="button" class="btn-modal" data-bs-toggle="modal" data-bs-target="#modalCart">
                                 <i class="fa-solid fa-cart-shopping"></i>
@@ -100,16 +96,36 @@
                                 </div>
                             </div>
                         </li>
-                    </ul>
+                        <li class="nav-item">
+                            <button type="button" class="btn-modal" data-bs-toggle="modal" data-bs-target="#modalMenu">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <div class="modal fade" id="modalMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                            <tr>
+                                                <td><a class="modal-menu-link" href="{{ route('profile.index') }}">Профиль</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a class="modal-menu-link" href="{{ route('order.index') }}">Заказы</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a class="modal-menu-link" href="{{ route('home') }}">Выйти</a></td>
+                                            </tr>
 
-                    <form class="d-flex search">
-                        <input class="form-control mr-2" type="search" placeholder="Поиск" aria-label="Search">
-                        <button class="btn-search btn-outline" type="submit">Поиск</button>
-                    </form>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-
+{{--        <i class="fa-solid fa-bars"></i>--}}
     </header>
 
 @yield('content')
