@@ -119,7 +119,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="orders" href=" {{ route('order.index') }}"><i class="fa-sharp fa-solid fa-receipt"></i></a>
+                                <a class="orders-link" href=" {{ route('order.index') }}"><i class="fa-sharp fa-solid fa-receipt"></i></a>
                             </li>
 
                             <li class="nav-item">
@@ -129,7 +129,7 @@
                                 <div class="modal fade" id="logoutMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-sm">
                                         <div class="modal-content">
-                                            <a  href="{{ route('logout') }}"
+                                            <a class="logout-btn"  href="{{ route('logout') }}"
                                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                                 {{ __('Выйти') }}

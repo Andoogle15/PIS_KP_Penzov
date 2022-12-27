@@ -2242,3 +2242,48 @@ a:hover{
     margin-right: 15px;
 }
 
+.orders-link i{
+    font-size: 25px;
+    margin-top: 10px;
+    color: #111111;
+    transition: all 0.1s linear;
+}
+
+
+.orders-link:hover i{
+    color: #fce38a;
+}
+/*Logout*/
+
+#logoutMenu{
+    margin-top: 50px;
+    margin-left: 750px;
+
+}
+
+.modal-content{
+    max-width: 140px;
+}
+
+.modal-content a{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.logout-btn{
+    color: #999999;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.1s linear;
+}
+
+.logout-btn:hover{
+    color: #111111;
+}
+
+/*Logout*/
+
