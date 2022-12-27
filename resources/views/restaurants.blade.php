@@ -14,171 +14,27 @@
            <a class="category-tag" title="Суши" href="#"><i class="fa-solid fa-fish-fins"><span>Суши</span></i></a>
        </div>
        <div class="restaurant-cards">
-           <div class="restaurant-card">
-               <div class="restaurant-img">
-                   <a href="{{ route('establishment.index') }}"><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></a>
-               </div>
-               <div class="restaurant-info">
-                   <a class="restaurant-title" href="#">
-                       <h4>Lorem ipsum</h4>
-                   </a>
-                   <div class="restaurant-address">
-                       <div class="address-street">
-                           ул.Нахимова
-                       </div>
-                       <div class="address-home">
-                           1
+           @foreach($data as $est)
+               <div class="restaurant-card">
+                   <div class="restaurant-img">
+                       <a href="{{ route('establishment.index') }}"><img src="{{ asset($est->photo) }}" alt=""></a>
+                   </div>
+                   <div class="restaurant-info">
+                       <a  class="restaurant-title" href="{{ route('establishment.index') }}">
+                           <h4>{{ $est->title }}</h4>
+                       </a>
+                       <div class="restaurant-address">
+                           <div class="address-street">
+                               {{ $est->street }}
+                           </div>
+                           <div class="address-home">
+                               {{ $est->house }}
+                           </div>
                        </div>
                    </div>
                </div>
-           </div>
-           <div class="restaurant-card">
-               <div class="restaurant-img">
-                   <a href="{{ route('establishment.index') }}"><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></a>
-               </div>
-               <div class="restaurant-info">
-                   <a class="restaurant-title" href="#">
-                       <h4>Lorem ipsum</h4>
-                   </a>
-                   <div class="restaurant-address">
-                       <div class="address-street">
-                           ул.Нахимова
-                       </div>
-                       <div class="address-home">
-                           1
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="restaurant-card">
-               <div class="restaurant-img">
-                   <a href="{{ route('establishment.index') }}"><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></a>
-               </div>
-               <div class="restaurant-info">
-                   <a class="restaurant-title" href="#">
-                       <h4>Lorem ipsum</h4>
-                   </a>
-                   <div class="restaurant-address">
-                       <div class="address-street">
-                           ул.Нахимова
-                       </div>
-                       <div class="address-home">
-                           1
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="brake"></div>
-           <div class="restaurant-card">
-               <div class="restaurant-img">
-                   <a href="{{ route('establishment.index') }}"><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></a>
-               </div>
-               <div class="restaurant-info">
-                   <a class="restaurant-title" href="#">
-                       <h4>Lorem ipsum</h4>
-                   </a>
-                   <div class="restaurant-address">
-                       <div class="address-street">
-                           ул.Нахимова
-                       </div>
-                       <div class="address-home">
-                           1
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="restaurant-card">
-               <div class="restaurant-img">
-                   <a href="{{ route('establishment.index') }}"><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></a>
-               </div>
-               <div class="restaurant-info">
-                   <a class="restaurant-title" href="#">
-                       <h4>Lorem ipsum</h4>
-                   </a>
-                   <div class="restaurant-address">
-                       <div class="address-street">
-                           ул.Нахимова
-                       </div>
-                       <div class="address-home">
-                           1
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="restaurant-card">
-               <div class="restaurant-img">
-                   <a href="{{ route('establishment.index') }}"><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></a>
-               </div>
-               <div class="restaurant-info">
-                   <a class="restaurant-title" href="#">
-                       <h4>Lorem ipsum</h4>
-                   </a>
-                   <div class="restaurant-address">
-                       <div class="address-street">
-                           ул.Нахимова
-                       </div>
-                       <div class="address-home">
-                           1
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="brake"></div>
-           <div class="restaurant-card">
-               <div class="restaurant-img">
-                   <a href="{{ route('establishment.index') }}"><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></a>
-               </div>
-               <div class="restaurant-info">
-                   <a class="restaurant-title" href="#">
-                       <h4>Lorem ipsum</h4>
-                   </a>
-                   <div class="restaurant-address">
-                       <div class="address-street">
-                           ул.Нахимова
-                       </div>
-                       <div class="address-home">
-                           1
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="restaurant-card">
-               <div class="restaurant-img">
-                   <a href="{{ route('establishment.index') }}"><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></a>
-               </div>
-               <div class="restaurant-info">
-                   <a class="restaurant-title" href="#">
-                       <h4>Lorem ipsum</h4>
-                   </a>
-                   <div class="restaurant-address">
-                       <div class="address-street">
-                           ул.Нахимова
-                       </div>
-                       <div class="address-home">
-                           1
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="restaurant-card">
-               <div class="restaurant-img">
-                   <a href="{{ route('establishment.index') }}"><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></a>
-               </div>
-               <div class="restaurant-info">
-                   <a class="restaurant-title" href="#">
-                       <h4>Lorem ipsum</h4>
-                   </a>
-                   <div class="restaurant-address">
-                       <div class="address-street">
-                           ул.Нахимова
-                       </div>
-                       <div class="address-home">
-                           1
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="brake"></div>
+           @endforeach
+
        </div>
    </div>
 @endsection

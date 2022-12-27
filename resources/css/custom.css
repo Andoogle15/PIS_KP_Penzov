@@ -2261,11 +2261,11 @@ a:hover{
 
 }
 
-.modal-content{
+.logout-content{
     max-width: 140px;
 }
 
-.modal-content a{
+.logout-content a{
     margin-top: 15px;
     margin-bottom: 15px;
     margin-right: 5px;

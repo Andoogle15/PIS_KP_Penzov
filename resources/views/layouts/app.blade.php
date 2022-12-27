@@ -128,7 +128,7 @@
                                 </button>
                                 <div class="modal fade" id="logoutMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-sm">
-                                        <div class="modal-content">
+                                        <div class="modal-content logout-content">
                                             <a class="logout-btn"  href="{{ route('logout') }}"
                                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

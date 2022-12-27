@@ -12,8 +12,8 @@
             <div class="row mt-5 justify-content-center">
                 <div class="col-xl-2 col-md-4 col-6">
                     <div class="icon-box">
-                        <a href="{{ route('restaurant.index') }}"><i class="fa-solid fa-utensils"></i></a>
-                        <h3><a href="{{ route('restaurant.index') }}">Рестораны</a></h3>
+                        <a href="{{ route('restaurant.allData') }}"><i class="fa-solid fa-utensils"></i></a>
+                        <h3><a href="{{ route('restaurant.allData') }}">Рестораны</a></h3>
                     </div>
                 </div>
 
@@ -26,43 +26,36 @@
 
                 <div class="col-xl-2 col-md-4 col-6">
                     <div class="icon-box">
-                        <a href="#"><i class="fa-solid fa-bowl-food"></i></a>
-                        <h3><a href="#">Первые блюда</a></h3>
+                        <a href="{{ route('firstCourse.allData') }}"><i class="fa-solid fa-bowl-food"></i></a>
+                        <h3><a href="{{ route('firstCourse.allData') }}">Первые блюда</a></h3>
                     </div>
                 </div>
 
                 <div class="col-xl-2 col-md-4 col-6">
                     <div class="icon-box">
-                        <a href="#"><i class="fa-solid fa-plate-wheat"></i></a>
-                        <h3><a href="#">Вторые блюда</a></h3>
+                        <a href="{{ route('secondCourse.allData') }}"><i class="fa-solid fa-plate-wheat"></i></a>
+                        <h3><a href="{{ route('secondCourse.allData') }}">Вторые блюда</a></h3>
                     </div>
                 </div>
 
                 <div class="col-xl-2 col-md-4 col-6">
                     <div class="icon-box">
-                        <a href="#"><i class="fa-solid fa-seedling"></i></a>
-                        <h3><a href="#">Салаты</a></h3>
+                        <a href="{{ route('salad.allData') }}"><i class="fa-solid fa-seedling"></i></a>
+                        <h3><a href="{{ route('salad.allData') }}">Салаты</a></h3>
                     </div>
                 </div>
 
                 <div class="col-xl-2 col-md-4 col-6">
                     <div class="icon-box">
-                        <a href="#"><i class="fa-solid fa-martini-glass"></i></a>
-                        <h3><a href="#">Напитки</a></h3>
+                        <a href="{{ route('drink.allData') }}"><i class="fa-solid fa-martini-glass"></i></a>
+                        <h3><a href="{{ route('drink.allData') }}">Напитки</a></h3>
                     </div>
                 </div>
 
                 <div class="col-xl-2 col-md-4 col-6">
                     <div class="icon-box">
-                        <a href="#"><i class="fa-solid fa-pizza-slice"></i></a>
-                        <h3><a href="#">Пицца</a></h3>
-                    </div>
-                </div>
-
-                <div class="col-xl-2 col-md-4 col-6">
-                    <div class="icon-box">
-                        <a href="#"><i class="fa-solid fa-fish-fins"></i></a>
-                        <h3><a href="#">Суши</a></h3>
+                        <a href="{{ route('pizza.allData') }}"><i class="fa-solid fa-pizza-slice"></i></a>
+                        <h3><a href="{{ route('pizza.allData') }}">Пицца</a></h3>
                     </div>
                 </div>
             </div>
