@@ -25,7 +25,7 @@ Route::get('/home/restaurant', [App\Http\Controllers\RestaurantController::class
 Route::get('/home/sales', [App\Http\Controllers\SaleController::class, 'index'])->name('sale.index');
 Route::get('/home/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile.index');
 Route::get('/home/orders', [App\Http\Controllers\OrderController::class, 'index'])->name('order.index');
-Route::get('/home/restaurant/estab', [App\Http\Controllers\EstablishmentController::class, 'index'])->name('establishment.index');
+Route::get('/home/restaurant/estab', [App\Http\Controllers\EstablishmentController::class, 'allData'])->name('establishment.allData');
 Route::get('/home/favorites', [App\Http\Controllers\FavoriteController::class, 'index'])->name('favorite.index');
 Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about.index');
 Route::get('/home/create_order', [App\Http\Controllers\MakeOrderController::class, 'index'])->name('makeOrder.index');
@@ -50,4 +50,4 @@ Route::get('/home/pizza', [App\Http\Controllers\PizzaController::class, 'allData
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'allData'])->name('home');

@@ -11,16 +11,15 @@
            <a class="category-tag" title="Салаты" href="#"><i class="fa-solid fa-seedling"><span>Салаты</span></i></a>
            <a class="category-tag" title="Напитки" href="#"><i class="fa-solid fa-martini-glass"><span>Напитки</span></i></a>
            <a class="category-tag" title="Пицца" href="#"><i class="fa-solid fa-pizza-slice"><span>Пицца</span></i></a>
-           <a class="category-tag" title="Суши" href="#"><i class="fa-solid fa-fish-fins"><span>Суши</span></i></a>
        </div>
        <div class="restaurant-cards">
            @foreach($data as $est)
                <div class="restaurant-card">
                    <div class="restaurant-img">
-                       <a href="{{ route('establishment.index') }}"><img src="{{ asset($est->photo) }}" alt=""></a>
+                       <a href="{{ route('establishment.allData') }}"><img src="{{ asset($est->photo) }}" alt=""></a>
                    </div>
                    <div class="restaurant-info">
-                       <a  class="restaurant-title" href="{{ route('establishment.index') }}">
+                       <a  class="restaurant-title" href="{{ route('establishment.allData') }}">
                            <h4>{{ $est->title }}</h4>
                        </a>
                        <div class="restaurant-address">

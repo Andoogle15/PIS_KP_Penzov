@@ -6,7 +6,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-8">
                     <h1 id="start-page">Food Center</h1>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                    <h2>Быстро. Вкусно. А что еще надо?</h2>
                 </div>
             </div>
             <div class="row mt-5 justify-content-center">
@@ -67,122 +67,159 @@
     <a href="#" class="arrowUp"><i class="fa-solid fa-arrow-up"></i></a>
     <section class="main-content">
         <div class="section-name">
-            <h2>Популярные блюда</h2>
+            <h2>Выгодные предложения</h2>
         </div>
         <div class="container-cards">
             <div class="product-cards">
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
-                    </div>
-                    <div class="product-details">
-                        <h4>Пицца "4 Сезона</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
-                        <div class="product-bottom-details d-flex justify-content-between">
-                            <div class="product-price">
-                                730руб
-                            </div>
-                            <div class="product-links">
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"> <i class="fa-solid fa-heart"></i></a>
+                @foreach($one as $el)
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="{{ asset($el->photo) }}" alt="">
+                        </div>
+                        <div class="product-details">
+                            <h4>{{ $el->title }}</h4>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price-sales">
+                                    <small class="small-price">{{ $el->price }}</small> 480руб
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="#"> <i class="fa-solid fa-heart"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
-                    </div>
-                    <div class="product-details">
-                        <h4>Пицца "4 Сезона</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
-                        <div class="product-bottom-details d-flex justify-content-between">
-                            <div class="product-price">
-                                730руб
+                @endforeach
+                    @foreach($two as $el)
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{{ asset($el->photo) }}" alt="">
                             </div>
-                            <div class="product-links">
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"> <i class="fa-solid fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
-                    </div>
-                    <div class="product-details">
-                        <h4>Пицца "4 Сезона</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
-                        <div class="product-bottom-details d-flex justify-content-between">
-                            <div class="product-price">
-                                730руб
-                            </div>
-                            <div class="product-links">
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"> <i class="fa-solid fa-heart"></i></a>
+                            <div class="product-details">
+                                <h4>{{ $el->title }}</h4>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price-sales">
+                                        <small class="small-price">{{ $el->price }}</small> 480руб
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                        <a href="#"> <i class="fa-solid fa-heart"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="brake"></div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
-                    </div>
-                    <div class="product-details">
-                        <h4>Пицца "4 Сезона</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
-                        <div class="product-bottom-details d-flex justify-content-between">
-                            <div class="product-price">
-                                730руб
+                    @endforeach
+                    @foreach($three as $el)
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{{ asset($el->photo) }}" alt="">
                             </div>
-                            <div class="product-links">
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"> <i class="fa-solid fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
-                    </div>
-                    <div class="product-details">
-                        <h4>Пицца "4 Сезона</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
-                        <div class="product-bottom-details d-flex justify-content-between">
-                            <div class="product-price">
-                                730руб
-                            </div>
-                            <div class="product-links">
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"> <i class="fa-solid fa-heart"></i></a>
+                            <div class="product-details">
+                                <h4>{{ $el->title }}</h4>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price-sales">
+                                        <small class="small-price">{{ $el->price }}</small> 480руб
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                        <a href="#"> <i class="fa-solid fa-heart"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt="">
-                    </div>
-                    <div class="product-details">
-                        <h4>Пицца "4 Сезона</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit.</p>
-                        <div class="product-bottom-details d-flex justify-content-between">
-                            <div class="product-price">
-                                730руб
+                    @endforeach
+                    @foreach($four as $el)
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{{ asset($el->photo) }}" alt="">
                             </div>
-                            <div class="product-links">
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"> <i class="fa-solid fa-heart"></i></a>
+                            <div class="product-details">
+                                <h4>{{ $el->title }}</h4>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price-sales">
+                                        <small class="small-price">{{ $el->price }}</small> 480руб
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                        <a href="#"> <i class="fa-solid fa-heart"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="brake"></div>
+                    @endforeach
+                    @foreach($five as $el)
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{{ asset($el->photo) }}" alt="">
+                            </div>
+                            <div class="product-details">
+                                <h4>{{ $el->title }}</h4>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price-sales">
+                                        <small class="small-price">{{ $el->price }}</small> 480руб
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                        <a href="#"> <i class="fa-solid fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                    @foreach($six as $el)
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{{ asset($el->photo) }}" alt="">
+                            </div>
+                            <div class="product-details">
+                                <h4>{{ $el->title }}</h4>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price-sales">
+                                        <small class="small-price">{{ $el->price }}</small> 480руб
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                        <a href="#"> <i class="fa-solid fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
             </div>
 
         </div>
+        <a class="more-sales" href="{{ route('sale.index') }}">Больше</a>
+    </section>
+    <section class="main-content">
+        <div class="section-name">
+            <h2>Рестораны</h2>
+        </div>
+        <div class="container-cards">
+            <div class="product-cards">
+                @foreach($seven as $est)
+                    <div class="restaurant-card">
+                        <div class="restaurant-img">
+                            <a href="{{ route('establishment.allData') }}"><img src="{{ asset($est->photo) }}" alt=""></a>
+                        </div>
+                        <div class="restaurant-info">
+                            <a  class="restaurant-title" href="{{ route('establishment.allData') }}">
+                                <h4>{{ $est->title }}</h4>
+                            </a>
+                            <div class="restaurant-address">
+                                <div class="address-street">
+                                    {{ $est->street }}
+                                </div>
+                                <div class="address-home">
+                                    {{ $est->house }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+
+        </div>
+        <a class="more-sales" href="{{ route('restaurant.allData') }}">Больше</a>
     </section>
 @endsection
