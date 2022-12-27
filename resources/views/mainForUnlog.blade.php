@@ -21,81 +21,29 @@
 <header id="header" class="position-relative my-header">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5F5F5">
         <div class="container-fluid my-container">
-            <a href="{{ route('main.index') }}" class="navbar-brand">FoodCenter</a>
+            <a href="{{ route('welcomeUnlog.index') }}" class="navbar-brand">FoodCenter</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
                     <li class="nav-item">
-                        <a href="{{ route('main.index') }}" class="nav-link">Главная</a>
+                        <a href="{{ route('stockUnlog.index') }}" class="nav-link">Акции</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('stock.index') }}" class="nav-link">Акции</a>
+                        <a href="{{ route('contactUnlog.index') }}" class="nav-link">Контакты</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('contact.index') }}" class="nav-link">Контакты</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ route('info.index') }}" class="nav-link">Доставка и оплата</a>
+                        <a href="{{ route('infoUnlog.index') }}" class="nav-link">Доставка и оплата</a>
                     </li>
                 </ul>
                 <form class="d-flex search">
                     <input class="form-control mr-2" type="search" placeholder="Поиск" aria-label="Search">
                     <button class="btn-search btn-outline" type="submit">Поиск</button>
                 </form>
-                <a class="favorites" href="{{ route('favorite.index') }}">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <button type="button" class="btn-modal" data-bs-toggle="modal" data-bs-target="#modalCart">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                        <div class="modal fade" id="modalCart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header text-black" style="background-color: #F5F5F5">
-                                        <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
-                                        <button type="button" class="close bg-transparent text-white" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <table class="table table-hover table-borderless ">
-                                            <tbody>
-                                            <tr>
-                                                <td><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></td>
-                                                <td><a href="#">Пицца "4 Сезона"</a></td>
-                                                <td>480руб</td>
-                                                <td>1</td>
-                                                <td><a href="#">X</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></td>
-                                                <td><a href="#">Пицца "4 Сезона"</a></td>
-                                                <td>480руб</td>
-                                                <td>1</td>
-                                                <td><a href="#">X</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></td>
-                                                <td><a href="#">Пицца "4 Сезона"</a></td>
-                                                <td>480руб</td>
-                                                <td>1</td>
-                                                <td><a href="#">X</a></td>
-                                            </tr>
 
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn-order text-black  ">Перейти к оформлению</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+
                    <li>
                        <div class="linkToLogReg">
                            <a href="{{ route('login') }}" class="linksToLogin">Войти</a>
@@ -121,15 +69,15 @@
             <div class="row mt-5 justify-content-center">
                 <div class="col-xl-2 col-md-4 col-6">
                     <div class="icon-box">
-                        <a href="{{ route('restaurant.index') }}"><i class="fa-solid fa-utensils"></i></a>
-                        <h3><a href="{{ route('restaurant.index') }}">Рестораны</a></h3>
+                        <a href="{{ route('restaurantUnlog.index') }}"><i class="fa-solid fa-utensils"></i></a>
+                        <h3><a href="{{ route('restaurantUnlog.index') }}">Рестораны</a></h3>
                     </div>
                 </div>
 
                 <div class="col-xl-2 col-md-4 col-6">
                     <div class="icon-box">
-                        <a href="{{ route('sale.index') }}"><i class="fa-solid fa-percent"></i></a>
-                        <h3><a href="{{ route('sale.index') }}">Выгодные предложения</a></h3>
+                        <a href="{{ route('saleUnlog.index') }}"><i class="fa-solid fa-percent"></i></a>
+                        <h3><a href="{{ route('saleUnlog.index') }}">Выгодные предложения</a></h3>
                     </div>
                 </div>
 

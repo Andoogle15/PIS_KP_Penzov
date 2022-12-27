@@ -1031,7 +1031,8 @@ transition: all 0.1s;
 /*WelcomeForUnlog*/
 
 .linkToLogReg{
-    margin-top: 8px;
+    margin-top: 2px;
+    margin-left: 15px;
 }
 
 .linksToLogin{
@@ -1293,18 +1294,23 @@ transition: all 0.1s;
     vertical-align: middle;
 }
 
-.btn-order{
+.toorder-btn{
     border: 2px solid;
     padding: 5px 15px;
     border-radius: 12px;
     transition: all 0.2s;
     background-color: #F5F5F5;
+    color: #111111;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.btn-order:hover{
+.toorder-btn:hover{
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
     transform: translateY(-1px);
     background-color: #FFFFF0;
+    color: #f38181;
 }
 
 .btn-search{
@@ -1569,6 +1575,8 @@ transition: all 0.1s;
     transition: all 0.1s linear;
     margin-bottom: 20px;
     margin-left: 25px;
+    max-width: 450px;
+
 }
 
 
@@ -1624,6 +1632,7 @@ transition: all 0.1s;
 .product-details{
     margin-left: 15px;
     margin-bottom: 10px;
+    margin-right: 15px;
 }
 
 
@@ -2205,7 +2214,7 @@ a:hover{
 /*Footer*/
 .footer{
     background-color: #F5F5F5;
-
+    margin-top: 30px;
 }
 
 .footer h4{

@@ -90,7 +90,7 @@
                                             </table>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn-order text-black  ">Перейти к оформлению</button>
+                                            <a class="toorder-btn" href="{{ route('makeOrder.index') }}">Оформить заказ</a>
                                         </div>
                                     </div>
                                 </div>
