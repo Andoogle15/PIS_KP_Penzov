@@ -20,10 +20,7 @@
 
 /*Button*/
 
-.btn-w:hover{
-    color: #111111;
-    transition: all 0.1s linear;
-}
+
 
 /*Container*/
 .container {
@@ -71,7 +68,7 @@
 }
 
 .links a:hover{
-    color: #555;
+    color: #fce38a;
 }
 
 .intro__inner{
@@ -81,6 +78,10 @@
     margin: 0 auto;
     text-align: center;
 
+}
+
+.intro__inner:hover a{
+    color: #fce38a;
 }
 
 .intro__subtitle{
@@ -1048,7 +1049,7 @@ transition: all 0.1s;
 
 
 .linksToLogin:hover{
-    color: #f38181;
+    color:#fce38a;
 }
 /*WelcomeForUnlog*/
 

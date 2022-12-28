@@ -7,21 +7,11 @@
                 <h1>Доставка и оплата</h1>
             </div>
             <div class="info-description">
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolores iste optio quas, sint
-                    voluptatem! Assumenda illo inventore libero quos unde voluptatem? Architecto magni possimus, quas qui
-                    soluta voluptas voluptatem!
+                <div><b>Оплата</b>
+                    <p>Существует 2 способа оплаты ваших покупок: картой и наличными. Банковской картов вы можете расплатиться как лично курьеру, так и на нашем сайте.  В обоих случаях возврат средств гарантирован, при повреждении со стороны курьера</p>
                 </div>
-                <div>Adipisci aliquam assumenda at atque blanditiis doloribus harum hic id ipsum mollitia quisquam
-                    similique, sunt ullam, veritatis voluptate. Alias delectus dolorem esse exercitationem hic incidunt
-                    itaque officiis porro repellat sint.
-                </div>
-                <div>Accusantium cupiditate dolore id magnam modi provident quas quia voluptates! Adipisci alias architecto
-                    atque aut autem dolore doloremque eligendi iure laudantium molestias nesciunt odit provident reiciendis
-                    sequi tempore, totam veritatis!
-                </div>
-                <div>Accusamus ad autem corporis debitis deserunt ea eos error hic illo impedit nisi, nostrum officia
-                    officiis pariatur quaerat quas qui, quibusdam quidem quod recusandae sed sequi similique temporibus unde
-                    ut!
+                <div><b>Доставка</b>
+                    <p>Доставка осуществляется курьерами из ближайших заведений сети, что гарантирует свежесть и сохранность вашего заказа при перевозке. Мы тщательно отбираем кандидатов на вакансию курьера, однако мы все равно не можем гарантировать 100% добросовестного исполнения курьером своих обязанностей. Поэтому мы просим вас в любых возникающих ситуациях звонить на горячую линию или заполнять форму обратной связи. </p>
                 </div>
             </div>
             <div class="info-map">
