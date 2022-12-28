@@ -70,9 +70,12 @@
                             <a class="favorites" href="{{ route('favorite.index') }}">
                                 <i class="fa-solid fa-heart"></i>
                             </a>
+
                             <li class="nav-item">
+{{--                                <a class="cart-page" href="{{ route('cart') }}"> <i class="fa-solid fa-cart-shopping"></i></a>--}}
+
                                 <button type="button" class="btn-modal" data-bs-toggle="modal" data-bs-target="#modalCart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i><span>{{ count((array) session('cart')) }}</span>
                                 </button>
                                 <div class="modal fade" id="modalCart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-xl">
@@ -84,32 +87,64 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <table class="table table-hover table-borderless ">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></td>
-                                                        <td><a href="#">Пицца "4 Сезона"</a></td>
-                                                        <td>480руб</td>
-                                                        <td>1</td>
-                                                        <td><a href="#">X</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></td>
-                                                        <td><a href="#">Пицца "4 Сезона"</a></td>
-                                                        <td>480руб</td>
-                                                        <td>1</td>
-                                                        <td><a href="#">X</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><img src="{{ asset('./storage/images/popular/popular1.jpg') }}" alt=""></td>
-                                                        <td><a href="#">Пицца "4 Сезона"</a></td>
-                                                        <td>480руб</td>
-                                                        <td>1</td>
-                                                        <td><a href="#">X</a></td>
-                                                    </tr>
-
-                                                    </tbody>
-                                                </table>
+{{--                                                <div class="row total-header-section">--}}
+{{--                                                    @php $total = 0 @endphp--}}
+{{--                                                    @foreach((array) session('cart') as $id => $details)--}}
+{{--                                                        @php $total += $details['price'] * $details['quantity'] @endphp--}}
+{{--                                                    @endforeach--}}
+{{--                                                    <div class="col-lg-12 col-sm-12 col-12 total-section text-right">--}}
+{{--                                                        <p>Total: <span class="text-info">{{ $total }} руб.</span></p>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                               @if(session('cart'))--}}
+{{--                                                   @foreach(session('cart') as $id => $details)--}}
+{{--                                                       <div class="row cart-details">--}}
+{{--                                                           <div class="col-lg-4 col-sm-4 col-4 cart-detail-img">--}}
+{{--                                                               <img src="{{ asset($details['photo']) }}" alt="">--}}
+{{--                                                           </div>--}}
+{{--                                                           <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">--}}
+{{--                                                               <p>{{ $details['title'] }}</p>--}}
+{{--                                                               <span class="price text-info">{{ $details['price'] }} руб.</span><span class="count">Quantity: {{ $details['quantity'] }}</span>--}}
+{{--                                                           </div>--}}
+{{--                                                       </div>--}}
+{{--                                                    @endforeach--}}
+{{--                                                @endif--}}
+                                                    <table id="cart" class="table table-hover table-condensed">
+                                                        <thead>
+                                                            <tr>
+                                                                <th style="width: 50%">Название</th>
+                                                                <th style="width: 10%">Цена</th>
+                                                                <th style="width: 8%">Количество</th>
+                                                                <th style="width: 10%"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            @php $total=0 @endphp
+                                                            @if(session('cart'))
+                                                                @foreach(session('cart') as $id => $details)
+                                                                    <tr data-id="{{ $id }}">
+                                                                        <td data-th="Название">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-3 hidden-xs">
+                                                                                    <img src="{{ $details['photo'] }}" width="100" height="100" class="img-responsive"/>
+                                                                                </div>
+                                                                                <div class="col-sm-9">
+                                                                                    <h4 class="nomargin">{{ $details['title'] }}</h4>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td data-th="Цена">{{ $details['price'] }}</td>
+                                                                        <td data-th="Количество">
+                                                                            <input type="number" value="{{ $details['quantity'] }}" class="form-control quantity cart_update" min="1">
+                                                                        </td>
+                                                                        <td class="actions" data-th="">
+                                                                            <button class="btn btn-danger btn-sm cart_remove"><i class="fa fa-trash-o"></i></button>
+                                                                        </td>
+                                                                    </tr>
+                                                                @endforeach
+                                                            @endif
+                                                        </tbody>
+                                                    </table>
                                             </div>
                                             <div class="modal-footer">
                                                 <a class="toorder-btn" href="{{ route('makeOrder.index') }}">Оформить заказ</a>
@@ -118,6 +153,8 @@
                                     </div>
                                 </div>
                             </li>
+
+
                             <li class="nav-item">
                                 <a class="orders-link" href=" {{ route('order.index') }}"><i class="fa-sharp fa-solid fa-receipt"></i></a>
                             </li>
@@ -165,6 +202,7 @@
                 </div>
             </div>
         </nav>
+
         @yield('content')
 
     </div>
@@ -216,5 +254,25 @@
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(".cart_remove").click(function (e){
+            e.preventDefault();
+            var ele = $(this);
+
+            if(confirm("Удалить?")){
+                $.ajax({
+                    url: '{{ route('remove_from_cart') }}',
+                    method: "DELETE",
+                    data: {
+                        _token: '{{ csrf_token() }}',
+                        id: ele.parents("tr").attr("data-id")
+                    },
+                    success: function (response) {
+                        window.location.reload();
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

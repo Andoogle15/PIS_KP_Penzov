@@ -13,15 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('establishments', function (Blueprint $table) {
+        Schema::create('carts', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('photo');
-            $table->string('street');
-            $table->integer('house');
-            $table->string('contact_number');
-            $table->time('opening_time');
-            $table->time('closing_time');
+            $table->string('session_id');
+            $table->unsignedBigInteger('product_id');
+            $table->foreign('product_id')->references('id')->on('dishes')->onDelete('cascade');
+            $table->double('price', total: 12, places: 2)->default(0);
+            $table->integer('quantity')->default(1);
             $table->timestamps();
         });
     }
@@ -33,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('establishments');
+        Schema::dropIfExists('carts');
     }
 };

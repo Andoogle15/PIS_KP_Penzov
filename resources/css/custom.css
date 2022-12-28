@@ -2306,3 +2306,15 @@ a:hover{
     color: #111111;
     border: 1px solid #111111;
 }
+
+.cart-page i{
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 12px;
+    color: #111111;
+}
+
+.cart-page:hover i{
+    color: #fce38a;
+}

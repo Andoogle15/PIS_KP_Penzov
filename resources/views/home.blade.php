@@ -63,12 +63,17 @@
     </section>
 
 
-
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
     <a href="#" class="arrowUp"><i class="fa-solid fa-arrow-up"></i></a>
     <section class="main-content">
         <div class="section-name">
             <h2>Выгодные предложения</h2>
         </div>
+
         <div class="container-cards">
             <div class="product-cards">
                 @foreach($one as $el)
@@ -80,10 +85,10 @@
                             <h4>{{ $el->title }}</h4>
                             <div class="product-bottom-details d-flex justify-content-between">
                                 <div class="product-price-sales">
-                                    <small class="small-price">{{ $el->price }}</small> 480руб
+                                    <small class="small-price">{{ $el->price }}</small> 220руб
                                 </div>
                                 <div class="product-links">
-                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="{{ route('add_to_cart', $el->id) }}"><i class="fa-solid fa-cart-shopping"></i></a>
                                     <a href="#"> <i class="fa-solid fa-heart"></i></a>
                                 </div>
                             </div>
@@ -99,10 +104,10 @@
                                 <h4>{{ $el->title }}</h4>
                                 <div class="product-bottom-details d-flex justify-content-between">
                                     <div class="product-price-sales">
-                                        <small class="small-price">{{ $el->price }}</small> 480руб
+                                        <small class="small-price">{{ $el->price }}</small> 400руб
                                     </div>
                                     <div class="product-links">
-                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                        <a href="{{ route('add_to_cart', $el->id) }}"><i class="fa-solid fa-cart-shopping"></i></a>
                                         <a href="#"> <i class="fa-solid fa-heart"></i></a>
                                     </div>
                                 </div>
@@ -118,10 +123,10 @@
                                 <h4>{{ $el->title }}</h4>
                                 <div class="product-bottom-details d-flex justify-content-between">
                                     <div class="product-price-sales">
-                                        <small class="small-price">{{ $el->price }}</small> 480руб
+                                        <small class="small-price">{{ $el->price }}</small> 110руб
                                     </div>
                                     <div class="product-links">
-                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                        <a href="{{ route('add_to_cart', $el->id) }}"><i class="fa-solid fa-cart-shopping"></i></a>
                                         <a href="#"> <i class="fa-solid fa-heart"></i></a>
                                     </div>
                                 </div>
@@ -137,10 +142,10 @@
                                 <h4>{{ $el->title }}</h4>
                                 <div class="product-bottom-details d-flex justify-content-between">
                                     <div class="product-price-sales">
-                                        <small class="small-price">{{ $el->price }}</small> 480руб
+                                        <small class="small-price">{{ $el->price }}</small> 100руб
                                     </div>
                                     <div class="product-links">
-                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                        <a href="{{ route('add_to_cart', $el->id) }}"><i class="fa-solid fa-cart-shopping"></i></a>
                                         <a href="#"> <i class="fa-solid fa-heart"></i></a>
                                     </div>
                                 </div>
@@ -156,10 +161,10 @@
                                 <h4>{{ $el->title }}</h4>
                                 <div class="product-bottom-details d-flex justify-content-between">
                                     <div class="product-price-sales">
-                                        <small class="small-price">{{ $el->price }}</small> 480руб
+                                        <small class="small-price">{{ $el->price }}</small> 100руб
                                     </div>
                                     <div class="product-links">
-                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                        <a href="{{ route('add_to_cart', $el->id) }}"><i class="fa-solid fa-cart-shopping"></i></a>
                                         <a href="#"> <i class="fa-solid fa-heart"></i></a>
                                     </div>
                                 </div>
@@ -175,10 +180,10 @@
                                 <h4>{{ $el->title }}</h4>
                                 <div class="product-bottom-details d-flex justify-content-between">
                                     <div class="product-price-sales">
-                                        <small class="small-price">{{ $el->price }}</small> 480руб
+                                        <small class="small-price">{{ $el->price }}</small> 555руб
                                     </div>
                                     <div class="product-links">
-                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                        <a href="{{ route('add_to_cart', $el->id) }}"><i class="fa-solid fa-cart-shopping"></i></a>
                                         <a href="#"> <i class="fa-solid fa-heart"></i></a>
                                     </div>
                                 </div>

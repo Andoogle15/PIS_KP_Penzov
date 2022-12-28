@@ -19,6 +19,9 @@ Route::get('/', function () {
 
 Route::get('/main', [App\Http\Controllers\MainPageController::class, 'index'])->name('main.index');
 Route::get('/home/stocks', [App\Http\Controllers\StockController::class, 'index'])->name('stock.index');
+Route::get('/home/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
+Route::get('add_to_cart/{id}', [App\Http\Controllers\DishController::class, 'addToCart'])->name('add_to_cart');
+Route::delete('remove-from-cart', [App\Http\Controllers\DishController::class, 'remove'])->name('remove_from_cart');
 Route::get('/home/contacts', [App\Http\Controllers\ContactController::class, 'index'])->name('contact.index');
 Route::get('/home/info', [App\Http\Controllers\InfoController::class, 'index'])->name('info.index');
 Route::get('/home/restaurant', [App\Http\Controllers\RestaurantController::class, 'allData'])->name('restaurant.allData');
@@ -32,6 +35,7 @@ Route::get('/home/create_order', [App\Http\Controllers\MakeOrderController::clas
 
 
 //Unlog routes
+Route::get('/menu_unlog', [App\Http\Controllers\WelcomeUnlogController::class, 'index'])->name('welcomeUnlog.index');
 Route::get('/menu_unlog', [App\Http\Controllers\WelcomeUnlogController::class, 'index'])->name('welcomeUnlog.index');
 Route::get('/menu_unlog/stocks', [App\Http\Controllers\StockUnlogController::class, 'index'])->name('stockUnlog.index');
 Route::get('/menu_unlog/contacts', [App\Http\Controllers\ContactUnlogController::class, 'index'])->name('contactUnlog.index');

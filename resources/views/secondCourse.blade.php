@@ -20,7 +20,7 @@
                                         {{ $element->price }}
                                     </div>
                                     <div class="product-links">
-                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                        <a href="{{ route('add_to_cart', $element->id) }}"><i class="fa-solid fa-cart-shopping"></i></a>
                                         <a href="#"> <i class="fa-solid fa-heart"></i></a>
                                     </div>
                                 </div>
