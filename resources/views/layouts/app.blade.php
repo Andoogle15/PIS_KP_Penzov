@@ -259,7 +259,7 @@
             e.preventDefault();
             var ele = $(this);
 
-            if(confirm("Удалить?")){
+            if(confirm("Удалить??")){
                 $.ajax({
                     url: '{{ route('remove_from_cart') }}',
                     method: "DELETE",
