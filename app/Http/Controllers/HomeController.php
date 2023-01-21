@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Dish;
-use App\Models\Establishment;
+use App\Models\Estab;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -30,7 +30,7 @@ class HomeController extends Controller
         $fouth = Dish::where('id', 18)->get();
         $five = Dish::where('id', 15)->get();
         $six = Dish::where('id', 23)->get();
-        $seven = Establishment::all();
+        $seven = Estab::all();
         return view('home', [
             'one' => $first,
             'two' => $second,
