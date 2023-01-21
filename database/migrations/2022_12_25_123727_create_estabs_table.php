@@ -13,10 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('menu', function (Blueprint $table) {
+        Schema::create('estabs', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('establishment_id')->unsigned();
-            $table->foreign('establishment_id')->references('id')->on('estabs');
+            $table->string('title');
+            $table->string('street');
+            $table->smallInteger('house');
+            $table->string('contact_number');
+            $table->time('opening_time')->default(9);
+            $table->time('closing_time')->default(23);
             $table->timestamps();
         });
     }
@@ -28,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('menu');
+        Schema::dropIfExists('estabs');
     }
 };
