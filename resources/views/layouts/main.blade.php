@@ -7,7 +7,6 @@
     @vite(['resources/js/app.js'])
     @vite(['resources/css/custom.css'])
     @vite(['resources/js/custom.js'])
-{{--    <link type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">--}}
     <script src="https://kit.fontawesome.com/536caefa35.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <title>FoodCenter</title>
