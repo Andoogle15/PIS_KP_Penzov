@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @vite(['resources/js/app.js'])
         @vite(['resources/css/custom.css'])
-        <link type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap;subset=cyrillic-ext" rel="stylesheet">
         <script src="https://kit.fontawesome.com/536caefa35.js" crossorigin="anonymous"></script>
 
